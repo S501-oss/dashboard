@@ -5,3 +5,98 @@
   --color-chart-2: #82ca9d;
   --color-surface-base: #ffffff;
 }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f7f9ff 0%, #eef4ff 100%);
+  color: #243447;
+}
+
+.calendar-card {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 16px 35px rgba(38, 68, 116, 0.14);
+  border: 1px solid #e6eeff;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 0.9rem;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #244060;
+}
+
+.calendar-header p {
+  margin: 0.3rem 0 0;
+  color: #6d7d93;
+  font-size: 0.95rem;
+}
+
+.custom-calendar {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+.custom-calendar .react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  background: transparent;
+  border: none;
+  color: #2f4f6f;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.custom-calendar .react-calendar__navigation button:hover {
+  background: #eef4ff;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #7387a2;
+}
+
+.custom-calendar .react-calendar__tile {
+  padding: 0.7rem 0.2rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.custom-calendar .react-calendar__tile:enabled:hover,
+.custom-calendar .react-calendar__tile:enabled:focus {
+  background: #eef4ff;
+  color: #1e3a5f;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background: linear-gradient(135deg, #4f66ff, #7a7bff);
+  color: white;
+  box-shadow: 0 8px 18px rgba(79, 102, 255, 0.24);
+}
+
+.custom-calendar .react-calendar__tile--now {
+  background: #eaf4ff;
+  color: #194683;
+  font-weight: 700;
+}
+
+.custom-calendar .react-calendar__tile--neighboringMonth {
+  color: #b3c0d0;
+}
